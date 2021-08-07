@@ -3,10 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
-  entry: './src/js/canvas.js',
+  entry: './src/js/collision.project.js',
   output: {
     path: __dirname + '/dist/',
-    filename: './js/canvas.bundle.js'
+    filename: './js/collision.project.bundle.js'
   },
   module: {
     rules: [
@@ -25,7 +25,7 @@ module.exports = {
   plugins: [
     new BrowserSyncPlugin({
       host: 'localhost',
-      port: 3000,
+      port: 5000,
       server: { baseDir: ['dist'] },
       files: ['./dist/*'],
       notify: false
